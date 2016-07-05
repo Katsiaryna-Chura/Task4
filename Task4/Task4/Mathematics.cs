@@ -7,9 +7,9 @@ using System.Numerics;
 
 namespace Task4
 {
-    public static class Mathematics
+    public class Mathematics
     {
-        public static BigInteger ProdTree(int l, int r)
+        public BigInteger ProdTree(int l, int r)
         {
             if (l > r)
                 return 1;
@@ -21,7 +21,7 @@ namespace Task4
             return ProdTree(l, m) * ProdTree(m + 1, r);
         }
 
-        public static BigInteger? Factorial(int n)
+        public BigInteger? Factorial(int n)
         {
             if (n < 0)
                 return null;
@@ -32,7 +32,7 @@ namespace Task4
             return ProdTree(2, n);
         }
 
-        //public static BigInteger Fibonacci(int n)
+        //public static BigInteger Fibonacci(int n) // work only for n > 0
         //{
         //    BigInteger a = BigInteger.Zero;
         //    BigInteger b = BigInteger.One;
@@ -52,7 +52,7 @@ namespace Task4
         //    return a;
         //}
 
-        public static double Fibonacci(int n)
+        public double Fibonacci(int n)
         {
             double fi = (1 + Math.Sqrt(5)) / 2;
             double fiN = Math.Pow(fi, n);

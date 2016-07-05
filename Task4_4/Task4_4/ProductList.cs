@@ -9,7 +9,7 @@ namespace Task4_4
     class ProductList
     {
         private static ProductList instance;
-        public static List<Product> listOfProducts { get; private set; }
+        public List<Product> listOfProducts { get; private set; }
 
         private ProductList()
         {
