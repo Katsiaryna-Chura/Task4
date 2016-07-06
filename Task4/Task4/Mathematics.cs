@@ -32,7 +32,7 @@ namespace Task4
             return ProdTree(2, n);
         }
 
-        //public static BigInteger Fibonacci(int n) // work only for n > 0
+        //public static BigInteger Fibonacci(int n) // works only for n > 0
         //{
         //    BigInteger a = BigInteger.Zero;
         //    BigInteger b = BigInteger.One;
